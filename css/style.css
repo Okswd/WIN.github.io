@@ -9,6 +9,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   line-height: 38px;
+  font-weight: 600;
+}
+
+span {
+  text-decoration: underline;
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -62,7 +68,8 @@ h1 {
   margin-bottom: 32px;
 }
 
-.header__requisites {
+.header__requisites,
+.slider {
   display: block;
   max-width: 900px;
   text-align: center;
@@ -72,8 +79,57 @@ h1 {
   padding-bottom: 30px;
 }
 
+.header__requisites-uah,
+.header__requisites-eur,
+.header__requisites-btc {
+  border: 1px solid #fff;
+  padding: 15px;
+}
+
+.header__requisites-uah,
+.header__requisites-eur {
+  margin-bottom: 10px;
+}
+
 .header__text-money {
   margin-bottom: 30px;
+}
+
+.slider__inner {
+  margin-bottom: 50px;
+  border: 1px solid #fff;
+  padding: 100px 0;
+}
+
+.slider__description {
+  font-family: Space Age Cyrillic;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.slider__box-img {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 450px;
+}
+
+.slider__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
+
+.slider__arrow-left {
+  left: 75px;
+}
+
+.slider__arrow-right {
+  right: 75px;
+}
+
+.slider__arrow-left:hover {
+  color: #036cca;
 }
 
 @media (max-width: 720px) {
@@ -97,11 +153,19 @@ h1 {
     font-size: 22px;
     line-height: 30px;
   }
+  span {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 555px) {
   .header__text-money {
     font-size: 18px;
+  }
+  span {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -124,6 +188,10 @@ h1 {
   .header__text-money {
     font-size: 15px;
     line-height: 25px;
+  }
+  span {
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
